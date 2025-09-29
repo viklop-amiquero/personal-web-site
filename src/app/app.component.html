@@ -5,7 +5,7 @@
     <shared-heading [title]="titleAbout"></shared-heading>
 
     <p
-        class="mt-4 bg-gray-100 dark:bg-stone-900 p-4 rounded-2xl text-justify text-lg md:text-xl leading-relaxed border-l-4 border-green-400 pl-4"
+        class="mt-4 bg-stone-900 p-4 rounded-2xl text-justify text-lg md:text-xl leading-relaxed border-l-4 border-green-400 pl-4"
     >
         Soy Viktor, un desarrollador con experiencia en **frontend y backend**.
         Trabajo con **.NET y Laravel** en el desarrollo backend, y en el
@@ -43,7 +43,7 @@
 
     <shared-heading [title]="titleExperience"></shared-heading>
     <div
-        class="group mt-8 flex flex-col items-center text-center md:flex-row md:items-center md:text-left md:gap-8 dark:bg-stone-900 bg-gray-100 p-6 rounded-2xl border-l-4 border-transparent hover:border-green-400 pl-6 shadow-lg hover:shadow-xl hover:scale-[1.02] transform transition duration-300"
+        class="group mt-8 flex flex-col items-center text-center md:flex-row md:items-center md:text-l bg-stone-900 p-6 rounded-2xl border-l-4 border-transparent hover:border-green-400 pl-6 shadow-lg hover:shadow-xl hover:scale-[1.02] transform transition duration-300"
         *ngFor="let item of experience"
     >
         <!-- Ícono centrado -->
@@ -52,14 +52,14 @@
         ></i>
 
         <div class="mt-4 md:mt-0">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+            <h3 class="text-2xl font-bold t text-white">
                 {{ item.institucion | titlecase }}
             </h3>
             <p class="text-lg font-semibold text-green-500">{{ item.job }}</p>
-            <p class="text-lg mt-2 text-gray-500 dark:text-gray-300">
+            <p class="text-lg mt-2 t text-gray-300">
                 {{ item.description }}
             </p>
-            <p class="text-lg font-bold text-gray-700 dark:text-gray-400">
+            <p class="text-lg font-bold t text-gray-400">
                 {{ item.year }}
             </p>
         </div>
@@ -67,7 +67,7 @@
 
     <shared-heading [title]="titleProyects"></shared-heading>
     <div
-        class="mt-8 flex flex-col items-center text-center lg:flex-row lg:items-center lg:text-left md:gap-8 dark:bg-stone-900 bg-gray-100 p-6 rounded-2xl shadow-lg border-l-4 border-transparent hover:border-green-400 hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
+        class="mt-8 flex flex-col items-center text-center lg:flex-row lg:items-center lg:text-l bg-stone-900 p-6 rounded-2xl shadow-lg border-l-4 border-transparent hover:border-green-400 hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
         *ngFor="let item of proyects"
     >
         <i
@@ -76,21 +76,17 @@
 
         <div class="lg:flex md:gap-6 mt-8 md:mt-0 w-full">
             <div class="mb-8 lg:mb-0 w-full">
-                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                <h3 class="text-2xl font-bold t text-white">
                     {{ item.title | titlecase }}
                 </h3>
                 <p class="text-lg text-green-500 font-semibold">
                     {{ item.year }}
                 </p>
-                <p
-                    class="text-lg mt-2 text-gray-500 dark:text-gray-300 leading-relaxed"
-                >
+                <p class="text-lg mt-2 t text-gray-300 leading-relaxed">
                     {{ item.description }}
                 </p>
 
-                <h3
-                    class="font-bold text-xl mt-4 text-gray-900 dark:text-white"
-                >
+                <h3 class="font-bold text-xl mt-4 t text-white">
                     <i
                         class="fa-solid fa-screwdriver-wrench mr-2 text-green-500"
                     ></i>
@@ -231,7 +227,7 @@
 
     <footer class="pt-16 pb-8">
         <p class="pt-8 pb-4 border-t border-gray-700 text-gray-400 text-center">
-            Todos los derechos reservados &copy; {{ date.getFullYear() }}
+            Todos Los Derechos Reservados &copy; {{ date.getFullYear() }}
         </p>
     </footer>
 </div>
